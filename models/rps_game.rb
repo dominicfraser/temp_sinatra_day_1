@@ -10,19 +10,19 @@ class RPS
       when "rock"
         case @player2
           when "rock" then "Draw"
-          when "paper" then "Player 1 wins"
-          when "scissors" then "Player 2 wins" 
+          when "paper" then "Player 1 wins with #{@player1}"
+          when "scissors" then "Player 2 wins with #{@player2}" 
         end
       when "paper"
         case @player2
-          when "rock" then "Player 1 wins"
+          when "rock" then "Player 1 wins with #{@player1}"
           when "paper" then "Draw"
-          when "scissors" then "Player 2 wins"
+          when "scissors" then "Player 2 wins with #{@player2}"
         end
       when "scissors"
         case @player2
-          when "rock" then "Player 2 wins"
-          when "paper" then "Player 1 wins"
+          when "rock" then "Player 2 wins with #{@player2}"
+          when "paper" then "Player 1 wins with #{@player1}"
           when "scissors" then "Draw"
         end
     end
